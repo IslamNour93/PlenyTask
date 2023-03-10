@@ -16,6 +16,9 @@
 		3950031529BB613D00ACAA70 /* PlenyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950031429BB613D00ACAA70 /* PlenyTaskTests.swift */; };
 		3950031F29BB613D00ACAA70 /* PlenyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950031E29BB613D00ACAA70 /* PlenyTaskUITests.swift */; };
 		3950032129BB613D00ACAA70 /* PlenyTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950032029BB613D00ACAA70 /* PlenyTaskUITestsLaunchTests.swift */; };
+		3950032F29BB616900ACAA70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950032E29BB616900ACAA70 /* User.swift */; };
+		3950033129BB617E00ACAA70 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950033029BB617E00ACAA70 /* Post.swift */; };
+		3950033429BB632500ACAA70 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950033329BB632500ACAA70 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		3950031A29BB613D00ACAA70 /* PlenyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlenyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3950031E29BB613D00ACAA70 /* PlenyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlenyTaskUITests.swift; sourceTree = "<group>"; };
 		3950032029BB613D00ACAA70 /* PlenyTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlenyTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3950032E29BB616900ACAA70 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3950033029BB617E00ACAA70 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3950033329BB632500ACAA70 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 		395002FD29BB613B00ACAA70 /* PlenyTask */ = {
 			isa = PBXGroup;
 			children = (
+				3950033229BB626000ACAA70 /* View */,
+				3950032D29BB615600ACAA70 /* Model */,
 				395002FE29BB613B00ACAA70 /* PlenyTaskApp.swift */,
 				3950030029BB613B00ACAA70 /* ContentView.swift */,
 				3950030229BB613C00ACAA70 /* Assets.xcassets */,
@@ -131,6 +139,23 @@
 				3950032029BB613D00ACAA70 /* PlenyTaskUITestsLaunchTests.swift */,
 			);
 			path = PlenyTaskUITests;
+			sourceTree = "<group>";
+		};
+		3950032D29BB615600ACAA70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3950032E29BB616900ACAA70 /* User.swift */,
+				3950033029BB617E00ACAA70 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3950033229BB626000ACAA70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3950033329BB632500ACAA70 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3950030829BB613D00ACAA70 /* Persistence.swift in Sources */,
+				3950033429BB632500ACAA70 /* LoginView.swift in Sources */,
 				3950030B29BB613D00ACAA70 /* PlenyTask.xcdatamodeld in Sources */,
 				3950030129BB613B00ACAA70 /* ContentView.swift in Sources */,
+				3950033129BB617E00ACAA70 /* Post.swift in Sources */,
+				3950032F29BB616900ACAA70 /* User.swift in Sources */,
 				395002FF29BB613B00ACAA70 /* PlenyTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
