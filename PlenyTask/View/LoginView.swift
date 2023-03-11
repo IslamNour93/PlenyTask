@@ -8,8 +8,57 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State var username: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+
+        
+        VStack{
+            GeometryReader{ geo in
+                
+                Image("threeGirls")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: geo.size.width*1.0)
+                    .edgesIgnoringSafeArea(.all)
+            }
+           
+            Text("Welcome")
+                .font(.title3)
+                .bold()
+                .foregroundColor(Color("PrimaryColor"))
+                .padding(.top,16)
+
+            VStack {
+                Text("Username")
+                    .padding()
+                TextField("Username", text: $username)
+                    .padding()
+                    .border(.gray)
+                
+                Text("password")
+                    .padding()
+                
+                    
+                TextField("password", text: $username)
+                    .padding()
+                    .border(.gray)
+            }
+            .padding()
+                    
+                    
+                
+
+
+        }
+
+
+        
+        
+       
+            
     }
 }
 
@@ -18,3 +67,4 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+	

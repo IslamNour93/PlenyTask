@@ -19,6 +19,11 @@
 		3950032F29BB616900ACAA70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950032E29BB616900ACAA70 /* User.swift */; };
 		3950033129BB617E00ACAA70 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950033029BB617E00ACAA70 /* Post.swift */; };
 		3950033429BB632500ACAA70 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950033329BB632500ACAA70 /* LoginView.swift */; };
+		3950033929BB7F2C00ACAA70 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3950033629BB7F2B00ACAA70 /* SF-Pro-Text-Regular.otf */; };
+		3950033B29BB7F2C00ACAA70 /* sf-pro-text-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3950033829BB7F2C00ACAA70 /* sf-pro-text-bold.ttf */; };
+		3950033E29BBB2EB00ACAA70 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950033D29BBB2EB00ACAA70 /* HomeTabView.swift */; };
+		3950034129BBD8C000ACAA70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950034029BBD8C000ACAA70 /* Extensions.swift */; };
+		3950034329BBDCB100ACAA70 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 3950034229BBDCB100ACAA70 /* SFPRODISPLAYBOLD.OTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,12 @@
 		3950032E29BB616900ACAA70 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3950033029BB617E00ACAA70 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3950033329BB632500ACAA70 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3950033629BB7F2B00ACAA70 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		3950033829BB7F2C00ACAA70 /* sf-pro-text-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-pro-text-bold.ttf"; sourceTree = "<group>"; };
+		3950033C29BB801800ACAA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3950033D29BBB2EB00ACAA70 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		3950034029BBD8C000ACAA70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3950034229BBDCB100ACAA70 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,8 @@
 		395002FD29BB613B00ACAA70 /* PlenyTask */ = {
 			isa = PBXGroup;
 			children = (
+				3950033F29BBD8AC00ACAA70 /* Utils */,
+				3950033C29BB801800ACAA70 /* Info.plist */,
 				3950033229BB626000ACAA70 /* View */,
 				3950032D29BB615600ACAA70 /* Model */,
 				395002FE29BB613B00ACAA70 /* PlenyTaskApp.swift */,
@@ -111,6 +124,7 @@
 				3950030229BB613C00ACAA70 /* Assets.xcassets */,
 				3950030729BB613D00ACAA70 /* Persistence.swift */,
 				3950030929BB613D00ACAA70 /* PlenyTask.xcdatamodeld */,
+				3950033529BB7EFE00ACAA70 /* Fonts */,
 				3950030429BB613D00ACAA70 /* Preview Content */,
 			);
 			path = PlenyTask;
@@ -154,8 +168,27 @@
 			isa = PBXGroup;
 			children = (
 				3950033329BB632500ACAA70 /* LoginView.swift */,
+				3950033D29BBB2EB00ACAA70 /* HomeTabView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3950033529BB7EFE00ACAA70 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3950034229BBDCB100ACAA70 /* SFPRODISPLAYBOLD.OTF */,
+				3950033829BB7F2C00ACAA70 /* sf-pro-text-bold.ttf */,
+				3950033629BB7F2B00ACAA70 /* SF-Pro-Text-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3950033F29BBD8AC00ACAA70 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3950034029BBD8C000ACAA70 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3950033929BB7F2C00ACAA70 /* SF-Pro-Text-Regular.otf in Resources */,
 				3950030629BB613D00ACAA70 /* Preview Assets.xcassets in Resources */,
+				3950033B29BB7F2C00ACAA70 /* sf-pro-text-bold.ttf in Resources */,
+				3950034329BBDCB100ACAA70 /* SFPRODISPLAYBOLD.OTF in Resources */,
 				3950030329BB613C00ACAA70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3950030829BB613D00ACAA70 /* Persistence.swift in Sources */,
+				3950034129BBD8C000ACAA70 /* Extensions.swift in Sources */,
 				3950033429BB632500ACAA70 /* LoginView.swift in Sources */,
 				3950030B29BB613D00ACAA70 /* PlenyTask.xcdatamodeld in Sources */,
 				3950030129BB613B00ACAA70 /* ContentView.swift in Sources */,
 				3950033129BB617E00ACAA70 /* Post.swift in Sources */,
 				3950032F29BB616900ACAA70 /* User.swift in Sources */,
 				395002FF29BB613B00ACAA70 /* PlenyTaskApp.swift in Sources */,
+				3950033E29BBB2EB00ACAA70 /* HomeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +494,7 @@
 				DEVELOPMENT_TEAM = S832A38562;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlenyTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,6 +524,7 @@
 				DEVELOPMENT_TEAM = S832A38562;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlenyTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
